@@ -1,0 +1,122 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1 oct. 2018, 09:27:11
+    Author     : DorianTona
+*/
+
+#top {
+    display: flex;
+    width: 100%;
+    margin: 0;  margin-bottom: 1em;
+}
+/* images */
+#top #pictures {
+    flex-grow: 0;
+    flex-direction: column;
+    height: 100%;
+    width: 33%;
+    margin: 0 1em 1em 0;
+}
+#top #pictures img{
+    width: 100%;
+    object-fit: scale-down;
+}
+#top #pictures #album {
+    
+}
+
+/* description */
+#top #description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#top #description #top-row {
+    display: flex;
+    align-items: baseline;
+    margin: 0;  margin-bottom: 1em;
+}
+#top #description #top-row > * {
+    height: max-content;
+    width: max-content;
+    margin: 0 1em 0 0;
+}
+#top #description #top-row .nom-produit { flex-grow: 0; }
+#top #description #top-row .producer { flex-grow: 1; }
+#top #description #top-row a { font-weight: bolder; }
+#top #description #top-row .rating { flex-grow: 0; }
+
+#top #description #middle-row {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1em;
+}
+#top #description #middle-row * { margin: 0 0.5em 0 0; }
+#top #description #middle-row #select-quantity { 
+    padding: 0.5em;
+    border: darkgray 1px solid;
+    border-radius: 0.4em;
+}
+#top #description #middle-row #add-to-basket { 
+    padding: 0.5em;
+    margin-left: 0.5em;
+    border: darkgray 1px solid;
+    border-radius: 0.4em;
+    transition: all ease-in-out 0.33s;
+}
+#top #description #middle-row #add-to-basket:hover {
+    background-color: whitesmoke; 
+    transition: all ease-in-out 0.33s;
+}
+
+#top #description #bottom-row { margin: 0; }
+
+/* Section commentaires */
+#comment-section {
+    display: flex;
+    flex-direction: column;
+}
+#comment-section .commentaire {
+    padding: 0 0 0.5em 0;
+    border-bottom: darkgray 1px dashed;
+    margin: 0 0 0.5em 0;
+}
+#comment-section .commentaire:last-child { border-color: transparent; }
+#comment-section .commentaire .profile-picture {
+    float: left;
+    vertical-align: top;
+    width: 4em; height: 4em;
+    object-fit: scale-down;
+    margin: 0 1em 1em 0;
+}
+#comment-section .commentaire .top-row {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.5em;
+}
+#comment-section .commentaire .top-row > * {
+    margin: 0; margin-right: 1em;
+    height: max-content;
+    width: max-content;
+}
+#comment-section .commentaire .top-row > *:last-child { margin: 0; }
+#comment-section .commentaire .pseudo {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+#comment-section .commentaire .date {
+    color:darkgray;
+    font-style: italic;
+}
+#comment-section .commentaire .rating {
+    flex-grow: 1;
+    text-align: right;
+}
+#comment-section .commentaire .texte {
+    font-style: italic;
+    margin: 0;
+}

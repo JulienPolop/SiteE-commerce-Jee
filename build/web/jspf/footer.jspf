@@ -1,0 +1,16 @@
+        <div id="footer">
+            <div id="about">
+                <p>LA BOUTIQUE DU TERROIR</p>
+                <p>2 chemin de la ferme</p>
+                <p>11250 Caunette-sur-Lauquet</p>
+                <p>06 66 66 66 66</p>
+            </div>
+            <div id="sns">
+                <p>Retrouvez nous sur les réseaux !</p>
+                <div id="icon-container">
+                    <a id="facebook" href="#"/>
+                    <a id="pinterest" href="#"/>
+                    <a id="twitter" href="#"/>
+                </div>
+            </div>
+        </div>

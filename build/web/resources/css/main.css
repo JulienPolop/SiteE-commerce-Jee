@@ -1,0 +1,205 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 sept. 2018, 14:00:02
+    Author     : dodot
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+html, body {
+    margin: 0; border: 0; padding: 0;
+    height: auto;
+    width: 100%;
+    background: url('../pictures/field.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+body * { font-family: 'Comfortaa', cursive; }
+
+a { color: black; text-decoration: none; font-weight: bold;  }
+a:hover { text-decoration: underline;}
+
+/* ===== header ===== */
+#header > * {
+    margin: 0 0 0 0.66em;
+    border-left: black 1px solid;
+    padding: 0 0 0 0.66em;
+    height: 100%;
+    width: max-content;
+}
+#header > *:first-child { margin: 0; border: 0; }
+
+#header {
+    background: rgba(255,255,255,0.8);
+    margin: 0 0 0.5em 0;
+    padding: 0.5em 1em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+}
+
+/* logo */
+#header #logo { height: max-content; text-decoration: none; }
+#header #logo h1 {
+    flex-grow: 0;
+    height: max-content;    width: max-content;
+    margin: 0;
+    font-family: 'Courgette', cursive;
+    font-size: 2em;
+}
+
+/* catégories */
+#header #categories {
+    flex-grow: 1;
+    height: max-content;
+    text-align: right;
+    font-size: 1.5em;
+    border: 0;
+}
+
+/* account */
+#header #account-connect {
+    flex-grow: 0;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#header #account-connect > * { height: max-content; }
+#header #account-connect > p { margin: 0 0.25em; }
+
+#header #account-connected {
+    display: flex;
+}
+#header #account-connected > .profile-picture {
+    width: 3em; height: 3em;
+    margin: 0 0.5em 0 0;
+}
+#header #account-connected > #texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+ /* panier */
+#header #basket {
+    flex-grow: 0;
+    width: max-content;
+    display: flex;
+    align-items: center;
+}
+#header #basket > * { margin: 0; }
+#header #basket:hover{ text-decoration: none; }
+#header #basket img {
+    height: 100%;
+    object-fit: scale-down;
+    margin-right: 0.25em;
+}
+#header #basket p {
+    font-weight: bolder;
+    font-size: 1.5em;
+    height: max-content;
+}
+
+/* ===== body ===== */
+#body {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.8);
+    width: 65%; height: 100%;   min-height: max-content;
+    margin: auto;
+    padding: 2em;   padding-bottom: 0;
+}
+
+/* ===== Placeholders ===== */
+.placeholder {
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+.placeholder > .placeholder-name {
+    margin: 0;  padding: 0;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+.placeholder > .articles {
+    width: 100%;    min-height: max-content;
+    overflow-x: scroll; overflow-y: hidden;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5em 0;
+    list-style: none;
+}
+.placeholder > .articles .item {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5em 0 0;
+    padding: 0.5em;
+    transition: all ease-in-out 0.33s;
+}
+.placeholder > .articles .item:hover {
+    background: white;
+    border-radius: 1em;
+    transition: all ease-in-out 0.33s;
+}
+.placeholder > .articles .item:last-child { margin: 0; }
+.placeholder > .articles .item .nom-produit {
+    margin: 0;  padding: 0;
+    text-align: center;
+}
+.placeholder > .articles .item img {
+    width: 14em; height: 9em;
+    margin: 0.5em 0;
+    object-fit: contain;
+}
+.placeholder > .articles .item .item-bottom { display: flex; }
+.placeholder > .articles .item .item-bottom * {
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
+}
+
+/* ===== Footer ===== */
+#footer {
+    width: 65%;
+    min-height: max-content;
+    margin: auto;   margin-bottom: 3em;
+    border-top: darkgray 1px dashed;
+    padding: 2em;
+    background: rgba(255,255,255,0.8);
+    display: flex;
+}
+#footer * { padding: 0; margin: auto; margin-bottom: 0.25em; }
+#footer #about{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+#footer #sns {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+#footer #sns #icon-container { display: flex; }
+#footer #sns #icon-container > * {
+    width: 2em; height: 2em;
+    transition: all ease-in-out 0.33s;
+    border: white 2px solid;
+    border-radius: 1em;
+    margin: 0 0.25em;
+}
+#footer #sns #icon-container > *:hover {
+    transition: all ease-in-out 0.33s;
+}
+#footer #sns #icon-container #facebook { background: url(../pictures/sns/facebook-logo-black.png) no-repeat; }
+#footer #sns #icon-container #facebook:hover { background: url(../pictures/sns/facebook-logo-color.png) no-repeat; }
+#footer #sns #icon-container #pinterest { background: url(../pictures/sns/pinterest-logo-black.png) no-repeat; }
+#footer #sns #icon-container #pinterest:hover { background: url(../pictures/sns/pinterest-logo-color.png) no-repeat; }
+#footer #sns #icon-container #twitter { background: url(../pictures/sns/twitter-logo-black.png) no-repeat; }
+#footer #sns #icon-container #twitter:hover { background: url(../pictures/sns/twitter-logo-color.png) no-repeat; }

@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 oct. 2018, 15:28:31
+    Author     : DorianTona
+*/
+#body { display: flex; flex-direction: row; padding-bottom: 2em; }
+#left {
+    width: 20%;
+    height: 100%;
+    padding: 0 1em 0 0;
+    margin: 0 1em 0 0;
+    box-shadow: 0.5em 0 6px -6px darkgray;
+}
+#left .title { margin: 0 0 0.66em 0; }
+#left #categories {
+    margin: 0;  padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+#left #categories > * {
+    width: max-content;
+    background: #009900;
+    color: whitesmoke;
+    font-size: 0.75em;
+    margin: 0 0.33em 0.33em 0;
+    border: 1px darkgrey solid;
+    border-radius: 0.25em;
+    padding: 0.25em;
+}
+#left #categories .selected {
+    background: #33cc33;
+}
+/*#left #categories .selected:before {
+    content: url(../pictures/cross.png);
+    width: 14px;
+    height: 14px;
+    object-fit: scale-down;
+    margin: 0 0.2em 0 0;
+}*/
+
+#right{
+    flex-grow: 1;
+    height: max-content;
+}
+#right .title {
+    margin: 0 0 0.66em 0;
+}
+#right #articles {
+    margin: 0;  padding: 0;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#right #articles .item {
+    height: max-content;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0.5em;
+    transition: all ease-in-out 0.33s;
+}
+#right #articles .item:hover {
+    background: white;
+    border-radius: 1em;
+    transition: all ease-in-out 0.33s;
+}
+#right #articles .item .nom-produit {
+    margin: 0;  padding: 0;
+    text-align: center;
+}
+#right #articles .item img {
+    width: 100%; max-height: 9em;
+    margin: 0.5em 0;
+    object-fit: contain;
+}
+#right #articles .item .item-bottom { display: flex; }
+#right #articles .item .item-bottom * {
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
+}

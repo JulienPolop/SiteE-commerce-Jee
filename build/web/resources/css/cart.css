@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 oct. 2018, 13:08:51
+    Author     : DorianTona
+*/
+
+#top {
+    display: flex;
+    align-items: baseline;
+    margin: 0; margin-bottom: 2em;
+    justify-content: space-between;
+}
+#top > * {
+    margin: 0 0.5em 0 0;
+    height: max-content;
+}
+#top:last-child { margin: 0; }
+#top h3 { 
+    font-size: 2em;
+}
+#top #nb-articles {
+    text-align: right;
+}
+#top #order {
+    padding: 0.66em;
+    border-radius: 0.5em;
+    font-size: 1em;
+}
+
+#articles {
+    height: max-content;
+}
+#articles * { margin: 0; }
+#articles .article {
+    height: max-content;
+    padding-bottom: 0.5em;
+    border-bottom: darkgray 1px dashed;
+    margin-bottom: 0.5em;
+    overflow: auto;
+}
+#articles .article:last-child { border: 0; }
+#articles .article > * {
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 0.5em 0;
+    width: max-content;
+}
+#articles .article img {
+    float: left;
+    clear: left;
+    display: block;
+    height: 4em; width: 4em;
+    margin: 0; margin-right: 1em;
+    object-fit: scale-down;
+}
+#articles .article .name-row .nom-produit{ margin-right: 1em; }
+#articles .article .delete {
+    float: right;
+    vertical-align: top;
+    font-size: 10px;
+}

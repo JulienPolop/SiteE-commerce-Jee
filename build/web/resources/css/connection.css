@@ -1,0 +1,35 @@
+#connection-dialog {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	width: 100%;
+}
+
+#connection-dialog h3 {
+	text-align: center;
+	font-size: 2em;
+}
+
+#connection-dialog .field {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto 1em auto;
+	width: 33%;
+}
+#connection-dialog .field > p {
+	margin: 0;
+	width: 100%;
+}
+#connection-dialog .field > input {
+	width: 100%;
+	padding: 0.66em;
+	border: 1px solid lightgray;
+	border-radius: 0.5em;
+}
+
+#connection-dialog > button {
+	margin: auto;
+	padding: 0.66em;
+	border: 1px solid lightgray;
+	border-radius: 0.5em;
+}

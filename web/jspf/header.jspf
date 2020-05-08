@@ -1,0 +1,14 @@
+    <h:body>
+        <div id="header">
+            <h1 id="logo">La Boutique du terroir</h1>
+            <div id="account">
+                <a>Connexion</a>
+                <p>ou</p>
+                <a>Créer un compte</a>
+            </div>
+            <a id="basket" href="#">
+                <img src="resources/pictures/basket.png" />
+                <p>(X)</p>
+            </a>
+            
+        </div>
